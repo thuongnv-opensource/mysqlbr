@@ -1,0 +1,7 @@
+mysql:
+  user: root
+  password: test123
+  host: localhost
+  port: 3306
+backup:
+  dataBackupDir: 'backup' # data dir store backup file

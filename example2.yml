@@ -1,0 +1,14 @@
+mysql:
+  user: root
+  password: test123
+  host: localhost
+  port: 3306
+backup:
+  dataBackupDir: 'backup'
+  strategiesBackup:
+    - name: hang-ngay
+      execFlags: ""
+      cron: "* * * * * *"
+      incrementalBackups:
+        - every: "10s" # Sẽ thực hiện incremental every 1h 1m 1s ....
+          take: 5 # Số bản backup incremental sẽ lấy
